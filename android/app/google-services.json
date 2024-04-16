@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "821549797162",
+    "project_id": "elders-elettrico-c2a4a",
+    "storage_bucket": "elders-elettrico-c2a4a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:821549797162:android:bd571dfa14e2fc91965853",
+        "android_client_info": {
+          "package_name": "com.elderselettrico.mobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "821549797162-2p2gms03cnivmfs4kgnb2ijqiq4ul0k4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA72AIFQNjAwPtYHP9c7Hjn58Tm0GF_iDA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "821549797162-2p2gms03cnivmfs4kgnb2ijqiq4ul0k4.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "821549797162-f5kcbteh078s713631gknkb6sksucfh7.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.elderselettrico.mobile"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

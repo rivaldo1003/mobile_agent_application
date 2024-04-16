@@ -1,0 +1,38 @@
+[
+    {
+        "title": "Throttle curve acceleration",
+        "inputType": "slider",
+        "min": -100,
+        "max": 100,
+        "defaultValue": 20,
+        "unit": "%",
+        "index": 10
+    },
+    {
+        "title": "Brake",
+        "inputType": "slider",
+        "min": -100,
+        "max": 100,
+        "defaultValue": 20,
+        "unit": "%",
+        "index": 11
+    },
+    {
+        "title": "Power limit acceleration",
+        "inputType": "slider",
+        "min": -100,
+        "max": 100,
+        "defaultValue": 80,
+        "unit": "%",
+        "index": 12
+    },
+    {
+        "title": "Brake",
+        "inputType": "slider",
+        "min": -100,
+        "max": 100,
+        "defaultValue": 80,
+        "unit": "%",
+        "index": 13
+    }
+]

@@ -1,0 +1,317 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.elderselettrico.mobile.dev"
+4    android:versionCode="102"
+5    android:versionName="1.0.0-beta1" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->C:\Flutter Project\mobile-agent-application\android\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="31" />
+9-->C:\Flutter Project\mobile-agent-application\android\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\Flutter Project\mobile-agent-application\android\app\src\main\AndroidManifest.xml:2:3-64
+11-->C:\Flutter Project\mobile-agent-application\android\app\src\main\AndroidManifest.xml:2:20-62
+12    <!-- Request legacy Bluetooth permissions on older devices. -->
+13    <uses-permission
+13-->C:\Flutter Project\mobile-agent-application\android\app\src\main\AndroidManifest.xml:4:3-92
+14        android:name="android.permission.BLUETOOTH"
+14-->C:\Flutter Project\mobile-agent-application\android\app\src\main\AndroidManifest.xml:4:20-63
+15        android:maxSdkVersion="30" />
+15-->C:\Flutter Project\mobile-agent-application\android\app\src\main\AndroidManifest.xml:4:64-90
+16    <uses-permission
+16-->C:\Flutter Project\mobile-agent-application\android\app\src\main\AndroidManifest.xml:5:3-98
+17        android:name="android.permission.BLUETOOTH_ADMIN"
+17-->C:\Flutter Project\mobile-agent-application\android\app\src\main\AndroidManifest.xml:5:20-69
+18        android:maxSdkVersion="30" />
+18-->C:\Flutter Project\mobile-agent-application\android\app\src\main\AndroidManifest.xml:5:70-96
+19  `
+20    <!--
+21       Needed only if your app looks for Bluetooth devices.
+22         If your app doesn't use Bluetooth scan results to derive physical
+23         location information, you can strongly assert that your app
+24         doesn't derive physical location.
+25    -->
+26    <uses-permission
+26-->C:\Flutter Project\mobile-agent-application\android\app\src\main\AndroidManifest.xml:11:3-70
+27        android:name="android.permission.BLUETOOTH_SCAN"
+27-->C:\Flutter Project\mobile-agent-application\android\app\src\main\AndroidManifest.xml:11:20-68
+28        android:usesPermissionFlags="neverForLocation" />
+28-->[com.polidea.rxandroidble2:rxandroidble:1.16.0] C:\Users\sireg\.gradle\caches\transforms-3\608261fcdb364b26c3ce2b23f9f2684b\transformed\jetified-rxandroidble-1.16.0\AndroidManifest.xml:24:9-55
+29    <!--
+30       Needed only if your app makes the device discoverable to Bluetooth
+31         devices.
+32    -->
+33    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE" />
+33-->C:\Flutter Project\mobile-agent-application\android\app\src\main\AndroidManifest.xml:14:3-75
+33-->C:\Flutter Project\mobile-agent-application\android\app\src\main\AndroidManifest.xml:14:20-73
+34    <!--
+35       Needed only if your app communicates with already-paired Bluetooth
+36         devices.
+37    -->
+38    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+38-->C:\Flutter Project\mobile-agent-application\android\app\src\main\AndroidManifest.xml:17:3-73
+38-->C:\Flutter Project\mobile-agent-application\android\app\src\main\AndroidManifest.xml:17:20-71
+39    <!-- Needed only if your app uses Bluetooth scan results to derive physical location. -->
+40    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+40-->C:\Flutter Project\mobile-agent-application\android\app\src\main\AndroidManifest.xml:19:3-76
+40-->C:\Flutter Project\mobile-agent-application\android\app\src\main\AndroidManifest.xml:19:20-74
+41    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+41-->C:\Flutter Project\mobile-agent-application\android\app\src\main\AndroidManifest.xml:20:3-78
+41-->C:\Flutter Project\mobile-agent-application\android\app\src\main\AndroidManifest.xml:20:20-76
+42    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+42-->C:\Flutter Project\mobile-agent-application\android\app\src\main\AndroidManifest.xml:21:3-77
+42-->C:\Flutter Project\mobile-agent-application\android\app\src\main\AndroidManifest.xml:21:20-75
+43    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+43-->[:geolocator_android] C:\Flutter Project\mobile-agent-application\build\geolocator_android\intermediates\merged_manifest\release\AndroidManifest.xml:9:5-77
+43-->[:geolocator_android] C:\Flutter Project\mobile-agent-application\build\geolocator_android\intermediates\merged_manifest\release\AndroidManifest.xml:9:22-74
+44    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+44-->[:connectivity_plus] C:\Flutter Project\mobile-agent-application\build\connectivity_plus\intermediates\merged_manifest\release\AndroidManifest.xml:9:5-79
+44-->[:connectivity_plus] C:\Flutter Project\mobile-agent-application\build\connectivity_plus\intermediates\merged_manifest\release\AndroidManifest.xml:9:22-76
+45    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+45-->[:location] C:\Flutter Project\mobile-agent-application\build\location\intermediates\merged_manifest\release\AndroidManifest.xml:9:5-81
+45-->[:location] C:\Flutter Project\mobile-agent-application\build\location\intermediates\merged_manifest\release\AndroidManifest.xml:9:22-78
+46
+47    <uses-feature
+47-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\sireg\.gradle\caches\transforms-3\6a4d88b0bce5a220565b2fdc47c4564c\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:26:5-28:35
+48        android:glEsVersion="0x00020000"
+48-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\sireg\.gradle\caches\transforms-3\6a4d88b0bce5a220565b2fdc47c4564c\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:27:9-41
+49        android:required="true" />
+49-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\sireg\.gradle\caches\transforms-3\6a4d88b0bce5a220565b2fdc47c4564c\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:28:9-32
+50
+51    <queries>
+51-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\sireg\.gradle\caches\transforms-3\6a4d88b0bce5a220565b2fdc47c4564c\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:30:5-34:15
+52
+53        <!-- Needs to be explicitly declared on Android R+ -->
+54        <package android:name="com.google.android.apps.maps" />
+54-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\sireg\.gradle\caches\transforms-3\6a4d88b0bce5a220565b2fdc47c4564c\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:33:9-64
+54-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\sireg\.gradle\caches\transforms-3\6a4d88b0bce5a220565b2fdc47c4564c\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:33:18-61
+55    </queries> <!-- required for API 23 - 30, no android:maxSdkVersion because of a potential breaking change -->
+56    <!-- TODO: add android:maxSdkVersion on 2.0.0 -->
+57    <uses-permission-sdk-23 android:name="android.permission.ACCESS_COARSE_LOCATION" />
+57-->[com.polidea.rxandroidble2:rxandroidble:1.16.0] C:\Users\sireg\.gradle\caches\transforms-3\608261fcdb364b26c3ce2b23f9f2684b\transformed\jetified-rxandroidble-1.16.0\AndroidManifest.xml:18:5-88
+57-->[com.polidea.rxandroidble2:rxandroidble:1.16.0] C:\Users\sireg\.gradle\caches\transforms-3\608261fcdb364b26c3ce2b23f9f2684b\transformed\jetified-rxandroidble-1.16.0\AndroidManifest.xml:18:29-85
+58    <uses-permission-sdk-23 android:name="android.permission.ACCESS_FINE_LOCATION" />
+58-->[com.polidea.rxandroidble2:rxandroidble:1.16.0] C:\Users\sireg\.gradle\caches\transforms-3\608261fcdb364b26c3ce2b23f9f2684b\transformed\jetified-rxandroidble-1.16.0\AndroidManifest.xml:19:5-86
+58-->[com.polidea.rxandroidble2:rxandroidble:1.16.0] C:\Users\sireg\.gradle\caches\transforms-3\608261fcdb364b26c3ce2b23f9f2684b\transformed\jetified-rxandroidble-1.16.0\AndroidManifest.xml:19:29-83
+59
+60    <permission
+60-->[androidx.core:core:1.9.0] C:\Users\sireg\.gradle\caches\transforms-3\651a13223b1fc9a3ba534f7fb62a3993\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+61        android:name="com.elderselettrico.mobile.dev.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+61-->[androidx.core:core:1.9.0] C:\Users\sireg\.gradle\caches\transforms-3\651a13223b1fc9a3ba534f7fb62a3993\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+62        android:protectionLevel="signature" />
+62-->[androidx.core:core:1.9.0] C:\Users\sireg\.gradle\caches\transforms-3\651a13223b1fc9a3ba534f7fb62a3993\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+63
+64    <uses-permission android:name="com.elderselettrico.mobile.dev.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+64-->[androidx.core:core:1.9.0] C:\Users\sireg\.gradle\caches\transforms-3\651a13223b1fc9a3ba534f7fb62a3993\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+64-->[androidx.core:core:1.9.0] C:\Users\sireg\.gradle\caches\transforms-3\651a13223b1fc9a3ba534f7fb62a3993\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+65
+66    <application
+67        android:name="android.app.Application"
+67-->C:\Flutter Project\mobile-agent-application\android\app\src\main\AndroidManifest.xml:22:16-49
+68        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+68-->[androidx.core:core:1.9.0] C:\Users\sireg\.gradle\caches\transforms-3\651a13223b1fc9a3ba534f7fb62a3993\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+69        android:icon="@mipmap/ic_launcher"
+69-->C:\Flutter Project\mobile-agent-application\android\app\src\main\AndroidManifest.xml:22:50-84
+70        android:label="@string/app_name"
+70-->C:\Flutter Project\mobile-agent-application\android\app\src\main\AndroidManifest.xml:22:121-153
+71        android:usesCleartextTraffic="true" >
+71-->C:\Flutter Project\mobile-agent-application\android\app\src\main\AndroidManifest.xml:22:85-120
+72        <activity
+72-->C:\Flutter Project\mobile-agent-application\android\app\src\main\AndroidManifest.xml:23:5-33:16
+73            android:name="com.elderselettrico.mobile.MainActivity"
+73-->C:\Flutter Project\mobile-agent-application\android\app\src\main\AndroidManifest.xml:23:15-43
+74            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+74-->C:\Flutter Project\mobile-agent-application\android\app\src\main\AndroidManifest.xml:23:44-194
+75            android:exported="true"
+75-->C:\Flutter Project\mobile-agent-application\android\app\src\main\AndroidManifest.xml:23:195-218
+76            android:hardwareAccelerated="true"
+76-->C:\Flutter Project\mobile-agent-application\android\app\src\main\AndroidManifest.xml:23:219-253
+77            android:launchMode="singleTop"
+77-->C:\Flutter Project\mobile-agent-application\android\app\src\main\AndroidManifest.xml:23:254-284
+78            android:theme="@style/LaunchTheme"
+78-->C:\Flutter Project\mobile-agent-application\android\app\src\main\AndroidManifest.xml:23:285-319
+79            android:windowSoftInputMode="adjustResize" >
+79-->C:\Flutter Project\mobile-agent-application\android\app\src\main\AndroidManifest.xml:23:320-362
+80
+81            <!--
+82           Specifies an Android theme to apply to this Activity as soon as
+83                 the Android process has started. This theme is visible to the user
+84                 while the Flutter UI initializes. After that, this theme continues
+85                 to determine the Window background behind the Flutter UI.
+86            -->
+87            <meta-data
+87-->C:\Flutter Project\mobile-agent-application\android\app\src\main\AndroidManifest.xml:28:7-113
+88                android:name="io.flutter.embedding.android.NormalTheme"
+88-->C:\Flutter Project\mobile-agent-application\android\app\src\main\AndroidManifest.xml:28:18-73
+89                android:resource="@style/NormalTheme" />
+89-->C:\Flutter Project\mobile-agent-application\android\app\src\main\AndroidManifest.xml:28:74-111
+90
+91            <intent-filter>
+91-->C:\Flutter Project\mobile-agent-application\android\app\src\main\AndroidManifest.xml:29:7-32:23
+92                <action android:name="android.intent.action.MAIN" />
+92-->C:\Flutter Project\mobile-agent-application\android\app\src\main\AndroidManifest.xml:30:9-60
+92-->C:\Flutter Project\mobile-agent-application\android\app\src\main\AndroidManifest.xml:30:17-58
+93
+94                <category android:name="android.intent.category.LAUNCHER" />
+94-->C:\Flutter Project\mobile-agent-application\android\app\src\main\AndroidManifest.xml:31:9-68
+94-->C:\Flutter Project\mobile-agent-application\android\app\src\main\AndroidManifest.xml:31:19-66
+95            </intent-filter>
+96        </activity>
+97        <!--
+98         Don't delete the meta-data below.
+99             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+100        -->
+101        <meta-data
+101-->C:\Flutter Project\mobile-agent-application\android\app\src\main\AndroidManifest.xml:36:5-67
+102            android:name="flutterEmbedding"
+102-->C:\Flutter Project\mobile-agent-application\android\app\src\main\AndroidManifest.xml:36:16-47
+103            android:value="2" />
+103-->C:\Flutter Project\mobile-agent-application\android\app\src\main\AndroidManifest.xml:36:48-65
+104        <meta-data
+104-->C:\Flutter Project\mobile-agent-application\android\app\src\main\AndroidManifest.xml:37:5-119
+105            android:name="com.google.android.geo.API_KEY"
+105-->C:\Flutter Project\mobile-agent-application\android\app\src\main\AndroidManifest.xml:37:16-61
+106            android:value="AIzaSyDJuLNH5mkjD_qaVXS0WO8B_8gcy34sO20" />
+106-->C:\Flutter Project\mobile-agent-application\android\app\src\main\AndroidManifest.xml:37:62-117
+107
+108        <service
+108-->[:firebase_core] C:\Flutter Project\mobile-agent-application\build\firebase_core\intermediates\merged_manifest\release\AndroidManifest.xml:10:9-14:19
+109            android:name="com.google.firebase.components.ComponentDiscoveryService"
+109-->[:firebase_core] C:\Flutter Project\mobile-agent-application\build\firebase_core\intermediates\merged_manifest\release\AndroidManifest.xml:10:18-89
+110            android:directBootAware="true"
+110-->[com.google.firebase:firebase-common:20.3.0] C:\Users\sireg\.gradle\caches\transforms-3\e0b9745fdf76dc3b6528bac9280a4dec\transformed\jetified-firebase-common-20.3.0\AndroidManifest.xml:34:13-43
+111            android:exported="false" >
+111-->[com.google.firebase:firebase-common:20.3.0] C:\Users\sireg\.gradle\caches\transforms-3\e0b9745fdf76dc3b6528bac9280a4dec\transformed\jetified-firebase-common-20.3.0\AndroidManifest.xml:35:13-37
+112            <meta-data
+112-->[:firebase_core] C:\Flutter Project\mobile-agent-application\build\firebase_core\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-13:85
+113                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+113-->[:firebase_core] C:\Flutter Project\mobile-agent-application\build\firebase_core\intermediates\merged_manifest\release\AndroidManifest.xml:12:17-124
+114                android:value="com.google.firebase.components.ComponentRegistrar" />
+114-->[:firebase_core] C:\Flutter Project\mobile-agent-application\build\firebase_core\intermediates\merged_manifest\release\AndroidManifest.xml:13:17-82
+115        </service>
+116        <service
+116-->[:geolocator_android] C:\Flutter Project\mobile-agent-application\build\geolocator_android\intermediates\merged_manifest\release\AndroidManifest.xml:12:9-16:56
+117            android:name="com.baseflow.geolocator.GeolocatorLocationService"
+117-->[:geolocator_android] C:\Flutter Project\mobile-agent-application\build\geolocator_android\intermediates\merged_manifest\release\AndroidManifest.xml:13:13-77
+118            android:enabled="true"
+118-->[:geolocator_android] C:\Flutter Project\mobile-agent-application\build\geolocator_android\intermediates\merged_manifest\release\AndroidManifest.xml:14:13-35
+119            android:exported="false"
+119-->[:geolocator_android] C:\Flutter Project\mobile-agent-application\build\geolocator_android\intermediates\merged_manifest\release\AndroidManifest.xml:15:13-37
+120            android:foregroundServiceType="location" />
+120-->[:geolocator_android] C:\Flutter Project\mobile-agent-application\build\geolocator_android\intermediates\merged_manifest\release\AndroidManifest.xml:16:13-53
+121
+122        <provider
+122-->[:image_picker_android] C:\Flutter Project\mobile-agent-application\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:10:9-18:20
+123            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+123-->[:image_picker_android] C:\Flutter Project\mobile-agent-application\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-82
+124            android:authorities="com.elderselettrico.mobile.dev.flutter.image_provider"
+124-->[:image_picker_android] C:\Flutter Project\mobile-agent-application\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:12:13-74
+125            android:exported="false"
+125-->[:image_picker_android] C:\Flutter Project\mobile-agent-application\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:13:13-37
+126            android:grantUriPermissions="true" >
+126-->[:image_picker_android] C:\Flutter Project\mobile-agent-application\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:14:13-47
+127            <meta-data
+127-->[:image_picker_android] C:\Flutter Project\mobile-agent-application\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:15:13-17:75
+128                android:name="android.support.FILE_PROVIDER_PATHS"
+128-->[:image_picker_android] C:\Flutter Project\mobile-agent-application\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:16:17-67
+129                android:resource="@xml/flutter_image_picker_file_paths" />
+129-->[:image_picker_android] C:\Flutter Project\mobile-agent-application\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:17:17-72
+130        </provider>
+131
+132        <activity
+132-->[:url_launcher_android] C:\Flutter Project\mobile-agent-application\build\url_launcher_android\intermediates\merged_manifest\release\AndroidManifest.xml:10:9-13:74
+133            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+133-->[:url_launcher_android] C:\Flutter Project\mobile-agent-application\build\url_launcher_android\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-74
+134            android:exported="false"
+134-->[:url_launcher_android] C:\Flutter Project\mobile-agent-application\build\url_launcher_android\intermediates\merged_manifest\release\AndroidManifest.xml:12:13-37
+135            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+135-->[:url_launcher_android] C:\Flutter Project\mobile-agent-application\build\url_launcher_android\intermediates\merged_manifest\release\AndroidManifest.xml:13:13-71
+136
+137        <service
+137-->[:location] C:\Flutter Project\mobile-agent-application\build\location\intermediates\merged_manifest\release\AndroidManifest.xml:13:9-17:56
+138            android:name="com.lyokone.location.FlutterLocationService"
+138-->[:location] C:\Flutter Project\mobile-agent-application\build\location\intermediates\merged_manifest\release\AndroidManifest.xml:14:13-71
+139            android:enabled="true"
+139-->[:location] C:\Flutter Project\mobile-agent-application\build\location\intermediates\merged_manifest\release\AndroidManifest.xml:15:13-35
+140            android:exported="false"
+140-->[:location] C:\Flutter Project\mobile-agent-application\build\location\intermediates\merged_manifest\release\AndroidManifest.xml:16:13-37
+141            android:foregroundServiceType="location" /> <!-- Needs to be explicitly declared on P+ -->
+141-->[:location] C:\Flutter Project\mobile-agent-application\build\location\intermediates\merged_manifest\release\AndroidManifest.xml:17:13-53
+142        <uses-library
+142-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\sireg\.gradle\caches\transforms-3\6a4d88b0bce5a220565b2fdc47c4564c\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:39:9-41:40
+143            android:name="org.apache.http.legacy"
+143-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\sireg\.gradle\caches\transforms-3\6a4d88b0bce5a220565b2fdc47c4564c\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:40:13-50
+144            android:required="false" />
+144-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\sireg\.gradle\caches\transforms-3\6a4d88b0bce5a220565b2fdc47c4564c\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:41:13-37
+145
+146        <activity
+146-->[com.google.android.gms:play-services-auth:20.4.1] C:\Users\sireg\.gradle\caches\transforms-3\d7a117a921e4f9accd352180435900b9\transformed\jetified-play-services-auth-20.4.1\AndroidManifest.xml:23:9-27:75
+147            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+147-->[com.google.android.gms:play-services-auth:20.4.1] C:\Users\sireg\.gradle\caches\transforms-3\d7a117a921e4f9accd352180435900b9\transformed\jetified-play-services-auth-20.4.1\AndroidManifest.xml:24:13-93
+148            android:excludeFromRecents="true"
+148-->[com.google.android.gms:play-services-auth:20.4.1] C:\Users\sireg\.gradle\caches\transforms-3\d7a117a921e4f9accd352180435900b9\transformed\jetified-play-services-auth-20.4.1\AndroidManifest.xml:25:13-46
+149            android:exported="false"
+149-->[com.google.android.gms:play-services-auth:20.4.1] C:\Users\sireg\.gradle\caches\transforms-3\d7a117a921e4f9accd352180435900b9\transformed\jetified-play-services-auth-20.4.1\AndroidManifest.xml:26:13-37
+150            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+150-->[com.google.android.gms:play-services-auth:20.4.1] C:\Users\sireg\.gradle\caches\transforms-3\d7a117a921e4f9accd352180435900b9\transformed\jetified-play-services-auth-20.4.1\AndroidManifest.xml:27:13-72
+151        <!--
+152            Service handling Google Sign-In user revocation. For apps that do not integrate with
+153            Google Sign-In, this service will never be started.
+154        -->
+155        <service
+155-->[com.google.android.gms:play-services-auth:20.4.1] C:\Users\sireg\.gradle\caches\transforms-3\d7a117a921e4f9accd352180435900b9\transformed\jetified-play-services-auth-20.4.1\AndroidManifest.xml:33:9-37:51
+156            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+156-->[com.google.android.gms:play-services-auth:20.4.1] C:\Users\sireg\.gradle\caches\transforms-3\d7a117a921e4f9accd352180435900b9\transformed\jetified-play-services-auth-20.4.1\AndroidManifest.xml:34:13-89
+157            android:exported="true"
+157-->[com.google.android.gms:play-services-auth:20.4.1] C:\Users\sireg\.gradle\caches\transforms-3\d7a117a921e4f9accd352180435900b9\transformed\jetified-play-services-auth-20.4.1\AndroidManifest.xml:35:13-36
+158            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+158-->[com.google.android.gms:play-services-auth:20.4.1] C:\Users\sireg\.gradle\caches\transforms-3\d7a117a921e4f9accd352180435900b9\transformed\jetified-play-services-auth-20.4.1\AndroidManifest.xml:36:13-107
+159            android:visibleToInstantApps="true" />
+159-->[com.google.android.gms:play-services-auth:20.4.1] C:\Users\sireg\.gradle\caches\transforms-3\d7a117a921e4f9accd352180435900b9\transformed\jetified-play-services-auth-20.4.1\AndroidManifest.xml:37:13-48
+160
+161        <activity
+161-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\sireg\.gradle\caches\transforms-3\a9136c2e5339c1633ea3781bc3356d56\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
+162            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+162-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\sireg\.gradle\caches\transforms-3\a9136c2e5339c1633ea3781bc3356d56\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:19-85
+163            android:exported="false"
+163-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\sireg\.gradle\caches\transforms-3\a9136c2e5339c1633ea3781bc3356d56\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:22:19-43
+164            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+164-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\sireg\.gradle\caches\transforms-3\a9136c2e5339c1633ea3781bc3356d56\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:21:19-78
+165
+166        <provider
+166-->[com.google.firebase:firebase-common:20.3.0] C:\Users\sireg\.gradle\caches\transforms-3\e0b9745fdf76dc3b6528bac9280a4dec\transformed\jetified-firebase-common-20.3.0\AndroidManifest.xml:25:9-30:39
+167            android:name="com.google.firebase.provider.FirebaseInitProvider"
+167-->[com.google.firebase:firebase-common:20.3.0] C:\Users\sireg\.gradle\caches\transforms-3\e0b9745fdf76dc3b6528bac9280a4dec\transformed\jetified-firebase-common-20.3.0\AndroidManifest.xml:26:13-77
+168            android:authorities="com.elderselettrico.mobile.dev.firebaseinitprovider"
+168-->[com.google.firebase:firebase-common:20.3.0] C:\Users\sireg\.gradle\caches\transforms-3\e0b9745fdf76dc3b6528bac9280a4dec\transformed\jetified-firebase-common-20.3.0\AndroidManifest.xml:27:13-72
+169            android:directBootAware="true"
+169-->[com.google.firebase:firebase-common:20.3.0] C:\Users\sireg\.gradle\caches\transforms-3\e0b9745fdf76dc3b6528bac9280a4dec\transformed\jetified-firebase-common-20.3.0\AndroidManifest.xml:28:13-43
+170            android:exported="false"
+170-->[com.google.firebase:firebase-common:20.3.0] C:\Users\sireg\.gradle\caches\transforms-3\e0b9745fdf76dc3b6528bac9280a4dec\transformed\jetified-firebase-common-20.3.0\AndroidManifest.xml:29:13-37
+171            android:initOrder="100" />
+171-->[com.google.firebase:firebase-common:20.3.0] C:\Users\sireg\.gradle\caches\transforms-3\e0b9745fdf76dc3b6528bac9280a4dec\transformed\jetified-firebase-common-20.3.0\AndroidManifest.xml:30:13-36
+172
+173        <meta-data
+173-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\sireg\.gradle\caches\transforms-3\32338404d8b1a87e3db1d6523bfd954d\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+174            android:name="com.google.android.gms.version"
+174-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\sireg\.gradle\caches\transforms-3\32338404d8b1a87e3db1d6523bfd954d\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+175            android:value="@integer/google_play_services_version" />
+175-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\sireg\.gradle\caches\transforms-3\32338404d8b1a87e3db1d6523bfd954d\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+176
+177        <uses-library
+177-->[androidx.window:window:1.0.0-beta04] C:\Users\sireg\.gradle\caches\transforms-3\04b61f922fb9b0281fb52df3ed278203\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+178            android:name="androidx.window.extensions"
+178-->[androidx.window:window:1.0.0-beta04] C:\Users\sireg\.gradle\caches\transforms-3\04b61f922fb9b0281fb52df3ed278203\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+179            android:required="false" />
+179-->[androidx.window:window:1.0.0-beta04] C:\Users\sireg\.gradle\caches\transforms-3\04b61f922fb9b0281fb52df3ed278203\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+180        <uses-library
+180-->[androidx.window:window:1.0.0-beta04] C:\Users\sireg\.gradle\caches\transforms-3\04b61f922fb9b0281fb52df3ed278203\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+181            android:name="androidx.window.sidecar"
+181-->[androidx.window:window:1.0.0-beta04] C:\Users\sireg\.gradle\caches\transforms-3\04b61f922fb9b0281fb52df3ed278203\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+182            android:required="false" />
+182-->[androidx.window:window:1.0.0-beta04] C:\Users\sireg\.gradle\caches\transforms-3\04b61f922fb9b0281fb52df3ed278203\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+183    </application>
+184
+185</manifest>

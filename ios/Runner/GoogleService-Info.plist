@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>821549797162-f5kcbteh078s713631gknkb6sksucfh7.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.821549797162-f5kcbteh078s713631gknkb6sksucfh7</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>821549797162-f7gt6bsrg6un9t1f79g00e7g4a8u55d9.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyD-dejlueDWeSQDHjllt0lLOghAvOhBdbY</string>
+	<key>GCM_SENDER_ID</key>
+	<string>821549797162</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.elderselettrico.mobile</string>
+	<key>PROJECT_ID</key>
+	<string>elders-elettrico-c2a4a</string>
+	<key>STORAGE_BUCKET</key>
+	<string>elders-elettrico-c2a4a.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:821549797162:ios:7fcd866b2654a3f1965853</string>
+</dict>
+</plist>

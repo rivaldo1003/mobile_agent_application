@@ -1,0 +1,28 @@
+{
+    "tabs": [
+        {
+            "key": "brt_config_low",
+            "title": "Low Power"
+        },
+        {
+            "key": "brt_config_optimal",
+            "title": "Optimal"
+        },
+        {
+            "key": "brt_config_high",
+            "title": "High Power"
+        }
+    ],
+    "configData": [
+        {   
+            "key": "data_id",
+            "value": "58",
+            "index": 0
+        },
+        {   
+            "key": "sub_data_id",
+            "value": "36",
+            "index": 1
+        }
+    ]
+}
